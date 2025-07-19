@@ -1,0 +1,33 @@
+2025-07-19 13:22:19,830 - INFO - Please ensure Chrome or Brave is closed before running.
+2025-07-19 13:22:19,833 - INFO - Found brave history file at C:\Users\Admin\AppData\Local\BraveSoftware\Brave-Browser\User Data\Default\History
+2025-07-19 13:22:19,847 - INFO - Copied history file to temp_brave_history.db
+2025-07-19 13:22:19,946 - INFO - Removed temporary file temp_brave_history.db
+2025-07-19 13:22:19,946 - ERROR - Failed to extract history: seconds=0, milliseconds=0, microseconds=13397383787326415, nanoseconds=0
+2025-07-19 13:23:31,085 - INFO - Please ensure Chrome or Brave is closed before running.
+2025-07-19 13:23:31,086 - INFO - Found brave history file at C:\Users\Admin\AppData\Local\BraveSoftware\Brave-Browser\User Data\Default\History
+2025-07-19 13:23:31,099 - INFO - Copied history file to temp_brave_history.db
+2025-07-19 13:23:31,377 - INFO - Saved history to data/raw/user1_history.csv with 38318 records
+2025-07-19 13:23:31,384 - INFO - Removed temporary file temp_brave_history.db
+2025-07-19 13:23:31,386 - INFO - Brave history extraction completed
+2025-07-19 13:25:38,220 - INFO - Please ensure Chrome or Brave is closed before running.
+2025-07-19 13:25:38,220 - INFO - Found brave history file at C:\Users\Admin\AppData\Local\BraveSoftware\Brave-Browser\User Data\Default\History
+2025-07-19 13:25:38,233 - INFO - Copied history file to temp_brave_history.db
+2025-07-19 13:25:38,495 - INFO - Saved history to data/raw/user1_history.csv with 38318 records
+2025-07-19 13:25:38,503 - INFO - Removed temporary file temp_brave_history.db
+2025-07-19 13:25:38,506 - INFO - Brave history extraction completed
+2025-07-19 15:36:48,822 - chrome_history - INFO - Please ensure Chrome or Brave is closed before running.
+2025-07-19 15:36:48,823 - chrome_history - INFO - Found brave history file at C:\Users\Admin\AppData\Local\BraveSoftware\Brave-Browser\User Data\Default\History
+2025-07-19 15:36:48,837 - chrome_history - INFO - Copied history file to temp_brave_history.db
+2025-07-19 15:36:48,873 - chrome_history - INFO - Removed temporary file temp_brave_history.db
+2025-07-19 15:36:48,873 - chrome_history - ERROR - Failed to extract history: seconds=0, milliseconds=0, microseconds=13397215857214888, nanoseconds=0
+2025-07-19 15:38:04,806 - chrome_history - INFO - Please ensure Chrome or Brave is closed before running.
+2025-07-19 15:38:04,806 - chrome_history - INFO - Found brave history file at C:\Users\Admin\AppData\Local\BraveSoftware\Brave-Browser\User Data\Default\History
+2025-07-19 15:38:04,819 - chrome_history - INFO - Copied history file to temp_brave_history.db
+2025-07-19 15:38:04,860 - chrome_history - INFO - Saved history to data/raw/user1_history.csv with 76 records
+2025-07-19 15:38:04,865 - chrome_history - INFO - Removed temporary file temp_brave_history.db
+2025-07-19 15:38:04,865 - chrome_history - INFO - Brave history extraction completed
+2025-07-19 15:41:48,794 - nlp_preprocess - INFO - Loaded data/raw/user1_history.csv with 76 records
+2025-07-19 15:41:48,794 - nlp_preprocess - WARNING - Input file data/raw/user2_history.csv not found
+2025-07-19 15:41:49,021 - nlp_preprocess - INFO - Saved cleaned history to data/processed/cleaned_history.csv with 75 records
+2025-07-19 15:49:11,924 - nlp_vectorize - INFO - Loaded data/processed/cleaned_history.csv with 75 records
+2025-07-19 15:49:11,929 - nlp_vectorize - INFO - Saved TF-IDF features to data/processed/tfidf_features.pkl with shape (75, 254)
