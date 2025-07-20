@@ -31,3 +31,30 @@
 2025-07-19 15:41:49,021 - nlp_preprocess - INFO - Saved cleaned history to data/processed/cleaned_history.csv with 75 records
 2025-07-19 15:49:11,924 - nlp_vectorize - INFO - Loaded data/processed/cleaned_history.csv with 75 records
 2025-07-19 15:49:11,929 - nlp_vectorize - INFO - Saved TF-IDF features to data/processed/tfidf_features.pkl with shape (75, 254)
+2025-07-20 17:35:34,219 - model_train - INFO - Loaded TF-IDF features from data/processed/tfidf_features.pkl with shape (75, 254)
+2025-07-20 17:35:34,220 - model_train - ERROR - Training failed: [Errno 2] No such file or directory: 'data/labels.csv'
+2025-07-20 17:36:52,784 - model_train - INFO - Loaded TF-IDF features from data/processed/tfidf_features.pkl with shape (75, 254)
+2025-07-20 17:36:52,785 - model_train - ERROR - Training failed: No columns to parse from file
+2025-07-20 17:38:23,528 - model_train - INFO - Loaded TF-IDF features from data/processed/tfidf_features.pkl with shape (75, 254)
+2025-07-20 17:38:23,530 - model_train - ERROR - Training failed: No columns to parse from file
+2025-07-20 17:39:24,358 - model_train - INFO - Loaded TF-IDF features from data/processed/tfidf_features.pkl with shape (75, 254)
+2025-07-20 17:39:24,360 - model_train - ERROR - Training failed: No columns to parse from file
+2025-07-20 19:03:37,462 - model_train - INFO - Loaded TF-IDF features from data/processed/tfidf_features.pkl with shape (75, 254)
+2025-07-20 19:03:37,471 - model_train - ERROR - Training failed: Mismatch between number of samples in TF-IDF and labels
+2025-07-20 19:05:35,774 - model_train - INFO - Loaded TF-IDF features from data/processed/tfidf_features.pkl with shape (75, 254)
+2025-07-20 19:05:35,783 - model_train - INFO - Split data into train (60 samples) and test (15 samples)
+2025-07-20 19:05:35,786 - model_train - ERROR - Training failed: This solver needs samples of at least 2 classes in the data, but the data contains only one class: np.int64(0)
+2025-07-20 19:07:17,003 - model_train - INFO - Loaded TF-IDF features from data/processed/tfidf_features.pkl with shape (75, 254)
+2025-07-20 19:07:17,006 - model_train - ERROR - Training failed: Mismatch between number of samples in TF-IDF and labels
+2025-07-20 19:09:59,785 - model_train - INFO - Loaded TF-IDF features from data/processed/tfidf_features.pkl with shape (75, 254)
+2025-07-20 19:09:59,786 - model_train - ERROR - Training failed: Error tokenizing data. C error: Expected 1 fields in line 725, saw 2
+
+2025-07-20 19:11:03,031 - model_train - INFO - Loaded TF-IDF features from data/processed/tfidf_features.pkl with shape (75, 254)
+2025-07-20 19:11:03,034 - model_train - ERROR - Training failed: Mismatch between number of samples in TF-IDF and labels
+2025-07-20 19:13:41,986 - model_train - INFO - Loaded TF-IDF features from data/processed/tfidf_features.pkl with shape (75, 254)
+2025-07-20 19:13:41,989 - model_train - ERROR - Training failed: Mismatch between number of samples in TF-IDF and labels
+2025-07-20 19:18:22,435 - model_train - INFO - Loaded TF-IDF features from data/processed/tfidf_features.pkl with shape (75, 254)
+2025-07-20 19:18:22,439 - model_train - INFO - Split data into train (60 samples) and test (15 samples)
+2025-07-20 19:18:22,461 - model_train - INFO - Model training completed
+2025-07-20 19:18:22,462 - model_train - INFO - Model accuracy on test set: 1.00
+2025-07-20 19:18:22,464 - model_train - INFO - Saved model to models/logistic_regression.pkl
