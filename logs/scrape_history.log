@@ -58,3 +58,196 @@
 2025-07-20 19:18:22,461 - model_train - INFO - Model training completed
 2025-07-20 19:18:22,462 - model_train - INFO - Model accuracy on test set: 1.00
 2025-07-20 19:18:22,464 - model_train - INFO - Saved model to models/logistic_regression.pkl
+2025-07-23 13:01:48,350 - chrome_history - INFO - Please ensure Chrome or Brave is closed before running.
+2025-07-23 13:01:48,351 - chrome_history - INFO - Found brave history file at C:\Users\Admin\AppData\Local\BraveSoftware\Brave-Browser\User Data\Default\History
+2025-07-23 13:01:48,365 - chrome_history - INFO - Copied history file to temp_brave_history.db
+2025-07-23 13:01:48,398 - chrome_history - INFO - Saved history to data/raw/user1_history.csv with 70 records
+2025-07-23 13:01:48,401 - chrome_history - INFO - Removed temporary file temp_brave_history.db
+2025-07-23 13:01:48,401 - chrome_history - INFO - Brave history extraction completed
+2025-07-23 13:08:06,838 - nlp_preprocess - INFO - Loaded data/raw/user1_history.csv with 70 records
+2025-07-23 13:08:06,838 - nlp_preprocess - WARNING - Input file data/raw/user2_history.csv not found
+2025-07-23 13:08:07,050 - nlp_preprocess - INFO - Saved cleaned history to data/processed/cleaned_history.csv with 69 records
+2025-07-23 13:08:23,553 - nlp_preprocess - INFO - Loaded data/raw/user1_history.csv with 70 records
+2025-07-23 13:08:23,553 - nlp_preprocess - WARNING - Input file data/raw/user2_history.csv not found
+2025-07-23 13:08:23,759 - nlp_preprocess - INFO - Saved cleaned history to data/processed/cleaned_history.csv with 69 records
+2025-07-23 13:08:27,842 - nlp_vectorize - INFO - Loaded data/processed/cleaned_history.csv with 69 records
+2025-07-23 13:08:27,861 - nlp_vectorize - INFO - Saved TF-IDF features to data/processed/tfidf_features.pkl with shape (69, 249)
+2025-07-23 13:20:45,227 - chrome_history - INFO - Please ensure Chrome or Brave is closed before running.
+2025-07-23 13:20:45,227 - INFO - Please ensure Chrome or Brave is closed before running.
+2025-07-23 13:20:45,227 - chrome_history - INFO - Found brave history file at C:\Users\Admin\AppData\Local\BraveSoftware\Brave-Browser\User Data\Default\History
+2025-07-23 13:20:45,227 - INFO - Found brave history file at C:\Users\Admin\AppData\Local\BraveSoftware\Brave-Browser\User Data\Default\History
+2025-07-23 13:20:45,242 - chrome_history - INFO - Copied history file to temp_brave_history.db
+2025-07-23 13:20:45,242 - INFO - Copied history file to temp_brave_history.db
+2025-07-23 13:20:45,577 - chrome_history - INFO - Saved history to data/raw/user1_history.csv with 38664 records
+2025-07-23 13:20:45,577 - INFO - Saved history to data/raw/user1_history.csv with 38664 records
+2025-07-23 13:20:45,579 - chrome_history - INFO - Removed temporary file temp_brave_history.db
+2025-07-23 13:20:45,579 - INFO - Removed temporary file temp_brave_history.db
+2025-07-23 13:20:45,583 - chrome_history - INFO - Brave history extraction completed
+2025-07-23 13:20:45,583 - INFO - Brave history extraction completed
+2025-07-23 13:22:27,210 - chrome_history - INFO - Please ensure Chrome or Brave is closed before running.
+2025-07-23 13:22:27,210 - INFO - Please ensure Chrome or Brave is closed before running.
+2025-07-23 13:22:27,210 - chrome_history - INFO - Found brave history file at C:\Users\Admin\AppData\Local\BraveSoftware\Brave-Browser\User Data\Default\History
+2025-07-23 13:22:27,210 - INFO - Found brave history file at C:\Users\Admin\AppData\Local\BraveSoftware\Brave-Browser\User Data\Default\History
+2025-07-23 13:22:27,223 - chrome_history - INFO - Copied history file to temp_brave_history.db
+2025-07-23 13:22:27,223 - INFO - Copied history file to temp_brave_history.db
+2025-07-23 13:22:27,558 - chrome_history - INFO - Saved history to data/raw/user1_history.csv with 38664 records
+2025-07-23 13:22:27,558 - INFO - Saved history to data/raw/user1_history.csv with 38664 records
+2025-07-23 13:22:27,560 - chrome_history - INFO - Removed temporary file temp_brave_history.db
+2025-07-23 13:22:27,560 - INFO - Removed temporary file temp_brave_history.db
+2025-07-23 13:22:27,563 - chrome_history - INFO - Brave history extraction completed
+2025-07-23 13:22:27,563 - INFO - Brave history extraction completed
+2025-07-23 13:23:42,289 - chrome_history - INFO - Please ensure Chrome or Brave is closed before running.
+2025-07-23 13:23:42,289 - INFO - Please ensure Chrome or Brave is closed before running.
+2025-07-23 13:23:42,289 - chrome_history - INFO - Found brave history file at C:\Users\Admin\AppData\Local\BraveSoftware\Brave-Browser\User Data\Default\History
+2025-07-23 13:23:42,289 - INFO - Found brave history file at C:\Users\Admin\AppData\Local\BraveSoftware\Brave-Browser\User Data\Default\History
+2025-07-23 13:23:42,303 - chrome_history - INFO - Copied history file to temp_brave_history.db
+2025-07-23 13:23:42,303 - INFO - Copied history file to temp_brave_history.db
+2025-07-23 13:23:42,589 - chrome_history - INFO - Saved history to data/raw/user1_history.csv with 38664 records
+2025-07-23 13:23:42,589 - INFO - Saved history to data/raw/user1_history.csv with 38664 records
+2025-07-23 13:23:42,591 - chrome_history - INFO - Removed temporary file temp_brave_history.db
+2025-07-23 13:23:42,591 - INFO - Removed temporary file temp_brave_history.db
+2025-07-23 13:23:42,594 - chrome_history - INFO - Brave history extraction completed
+2025-07-23 13:23:42,594 - INFO - Brave history extraction completed
+2025-07-23 13:23:42,598 - nlp_preprocess - WARNING - Input file d not found
+2025-07-23 13:23:42,598 - WARNING - Input file d not found
+2025-07-23 13:23:42,599 - nlp_preprocess - WARNING - Input file a not found
+2025-07-23 13:23:42,599 - WARNING - Input file a not found
+2025-07-23 13:23:42,599 - nlp_preprocess - WARNING - Input file t not found
+2025-07-23 13:23:42,599 - WARNING - Input file t not found
+2025-07-23 13:23:42,599 - nlp_preprocess - WARNING - Input file a not found
+2025-07-23 13:23:42,599 - WARNING - Input file a not found
+2025-07-23 13:23:42,599 - nlp_preprocess - ERROR - Preprocessing failed: [Errno 13] Permission denied: '/'
+2025-07-23 13:23:42,599 - ERROR - Preprocessing failed: [Errno 13] Permission denied: '/'
+2025-07-23 13:28:00,598 - chrome_history - INFO - Please ensure Chrome or Brave is closed before running.
+2025-07-23 13:28:00,598 - INFO - Please ensure Chrome or Brave is closed before running.
+2025-07-23 13:28:00,599 - chrome_history - INFO - Found brave history file at C:\Users\Admin\AppData\Local\BraveSoftware\Brave-Browser\User Data\Default\History
+2025-07-23 13:28:00,599 - INFO - Found brave history file at C:\Users\Admin\AppData\Local\BraveSoftware\Brave-Browser\User Data\Default\History
+2025-07-23 13:28:00,613 - chrome_history - INFO - Copied history file to temp_brave_history.db
+2025-07-23 13:28:00,613 - INFO - Copied history file to temp_brave_history.db
+2025-07-23 13:28:00,921 - chrome_history - INFO - Saved history to data/raw/user1_history.csv with 38664 records
+2025-07-23 13:28:00,921 - INFO - Saved history to data/raw/user1_history.csv with 38664 records
+2025-07-23 13:28:00,923 - chrome_history - INFO - Removed temporary file temp_brave_history.db
+2025-07-23 13:28:00,923 - INFO - Removed temporary file temp_brave_history.db
+2025-07-23 13:28:00,926 - chrome_history - INFO - Brave history extraction completed
+2025-07-23 13:28:00,926 - INFO - Brave history extraction completed
+2025-07-23 13:28:00,931 - nlp_preprocess - ERROR - Preprocessing failed: [Errno 13] Permission denied: '.'
+2025-07-23 13:28:00,931 - ERROR - Preprocessing failed: [Errno 13] Permission denied: '.'
+2025-07-23 13:30:01,757 - chrome_history - INFO - Please ensure Chrome or Brave is closed before running.
+2025-07-23 13:30:01,757 - INFO - Please ensure Chrome or Brave is closed before running.
+2025-07-23 13:30:01,758 - chrome_history - INFO - Found brave history file at C:\Users\Admin\AppData\Local\BraveSoftware\Brave-Browser\User Data\Default\History
+2025-07-23 13:30:01,758 - INFO - Found brave history file at C:\Users\Admin\AppData\Local\BraveSoftware\Brave-Browser\User Data\Default\History
+2025-07-23 13:30:01,771 - chrome_history - INFO - Copied history file to temp_brave_history.db
+2025-07-23 13:30:01,771 - INFO - Copied history file to temp_brave_history.db
+2025-07-23 13:30:02,061 - chrome_history - INFO - Saved history to data/raw/user1_history.csv with 38664 records
+2025-07-23 13:30:02,061 - INFO - Saved history to data/raw/user1_history.csv with 38664 records
+2025-07-23 13:30:02,063 - chrome_history - INFO - Removed temporary file temp_brave_history.db
+2025-07-23 13:30:02,063 - INFO - Removed temporary file temp_brave_history.db
+2025-07-23 13:30:02,067 - chrome_history - INFO - Brave history extraction completed
+2025-07-23 13:30:02,067 - INFO - Brave history extraction completed
+2025-07-23 13:30:02,068 - nlp_preprocess - ERROR - Preprocessing failed: 'NoneType' object is not iterable
+2025-07-23 13:30:02,068 - ERROR - Preprocessing failed: 'NoneType' object is not iterable
+2025-07-23 13:32:40,844 - chrome_history - INFO - Please ensure Chrome or Brave is closed before running.
+2025-07-23 13:32:40,844 - chrome_history - INFO - Found brave history file at C:\Users\Admin\AppData\Local\BraveSoftware\Brave-Browser\User Data\Default\History
+2025-07-23 13:32:40,859 - chrome_history - INFO - Copied history file to temp_brave_history.db
+2025-07-23 13:32:41,154 - chrome_history - INFO - Saved history to data/raw/userb_history.csv with 38664 records
+2025-07-23 13:32:41,156 - chrome_history - INFO - Removed temporary file temp_brave_history.db
+2025-07-23 13:32:41,158 - chrome_history - INFO - Brave history extraction completed
+2025-07-23 13:32:41,160 - nlp_preprocess - WARNING - Input file d not found
+2025-07-23 13:32:41,161 - nlp_preprocess - WARNING - Input file a not found
+2025-07-23 13:32:41,161 - nlp_preprocess - WARNING - Input file t not found
+2025-07-23 13:32:41,161 - nlp_preprocess - WARNING - Input file a not found
+2025-07-23 13:32:41,161 - nlp_preprocess - ERROR - Preprocessing failed: [Errno 13] Permission denied: '/'
+2025-07-23 13:34:11,563 - chrome_history - INFO - Please ensure Chrome or Brave is closed before running.
+2025-07-23 13:34:11,563 - chrome_history - INFO - Found brave history file at C:\Users\Admin\AppData\Local\BraveSoftware\Brave-Browser\User Data\Default\History
+2025-07-23 13:34:11,577 - chrome_history - INFO - Copied history file to temp_brave_history.db
+2025-07-23 13:34:11,609 - chrome_history - INFO - Saved history to data/raw/userb_history.csv with 70 records
+2025-07-23 13:34:11,612 - chrome_history - INFO - Removed temporary file temp_brave_history.db
+2025-07-23 13:34:11,613 - chrome_history - INFO - Brave history extraction completed
+2025-07-23 13:35:01,738 - chrome_history - INFO - Please ensure Chrome or Brave is closed before running.
+2025-07-23 13:35:01,739 - chrome_history - INFO - Found brave history file at C:\Users\Admin\AppData\Local\BraveSoftware\Brave-Browser\User Data\Default\History
+2025-07-23 13:35:01,752 - chrome_history - INFO - Copied history file to temp_brave_history.db
+2025-07-23 13:35:02,044 - chrome_history - INFO - Saved history to data/raw/userb_history.csv with 38664 records
+2025-07-23 13:35:02,047 - chrome_history - INFO - Removed temporary file temp_brave_history.db
+2025-07-23 13:35:02,049 - chrome_history - INFO - Brave history extraction completed
+2025-07-23 13:35:02,052 - nlp_preprocess - WARNING - Input file d not found
+2025-07-23 13:35:02,052 - nlp_preprocess - WARNING - Input file a not found
+2025-07-23 13:35:02,052 - nlp_preprocess - WARNING - Input file t not found
+2025-07-23 13:35:02,052 - nlp_preprocess - WARNING - Input file a not found
+2025-07-23 13:35:02,053 - nlp_preprocess - ERROR - Preprocessing failed: [Errno 13] Permission denied: '/'
+2025-07-23 13:38:49,462 - nlp_preprocess - WARNING - Input file data/raw/user1_history.csv not found
+2025-07-23 13:38:49,565 - nlp_preprocess - INFO - Loaded data/raw/userb_history.csv with 38664 records
+2025-07-23 13:40:03,290 - nlp_preprocess - INFO - Saved cleaned history to data/processed/cleaned_history.csv with 38140 records
+2025-07-23 13:40:29,119 - chrome_history - INFO - Please ensure Chrome or Brave is closed before running.
+2025-07-23 13:40:29,119 - chrome_history - INFO - Found brave history file at C:\Users\Admin\AppData\Local\BraveSoftware\Brave-Browser\User Data\Default\History
+2025-07-23 13:40:29,135 - chrome_history - INFO - Copied history file to temp_brave_history.db
+2025-07-23 13:40:29,458 - chrome_history - INFO - Saved history to data/raw/userb_history.csv with 38669 records
+2025-07-23 13:40:29,462 - chrome_history - INFO - Removed temporary file temp_brave_history.db
+2025-07-23 13:40:29,464 - chrome_history - INFO - Brave history extraction completed
+2025-07-23 13:40:29,590 - nlp_preprocess - INFO - Loaded data/raw/userb_history.csv with 38669 records
+2025-07-23 13:41:44,357 - nlp_preprocess - INFO - Saved cleaned history to data/processed/cleaned_history.csv with 38145 records
+2025-07-23 13:41:44,570 - nlp_vectorize - ERROR - Vectorization failed: _path_exists: path should be string, bytes, os.PathLike or integer, not DataFrame
+2025-07-23 13:42:54,830 - model_train - INFO - Loaded TF-IDF features from data/processed/tfidf_features.pkl with shape (69, 249)
+2025-07-23 13:42:54,842 - model_train - ERROR - Training failed: Mismatch between number of samples in TF-IDF and labels
+2025-07-23 13:43:21,488 - model_train - INFO - Loaded TF-IDF features from data/processed/tfidf_features.pkl with shape (69, 249)
+2025-07-23 13:43:21,500 - model_train - ERROR - Training failed: Mismatch between number of samples in TF-IDF and labels
+2025-07-23 13:46:03,219 - chrome_history - INFO - Please ensure Chrome or Brave is closed before running.
+2025-07-23 13:46:03,220 - chrome_history - INFO - Found brave history file at C:\Users\Admin\AppData\Local\BraveSoftware\Brave-Browser\User Data\Default\History
+2025-07-23 13:46:03,234 - chrome_history - INFO - Copied history file to temp_brave_history.db
+2025-07-23 13:46:03,254 - chrome_history - INFO - Saved 300 recent history records to data/raw/userb_history.csv
+2025-07-23 13:46:03,256 - chrome_history - INFO - Removed temporary file temp_brave_history.db
+2025-07-23 13:46:03,257 - chrome_history - INFO - Brave history extraction completed
+2025-07-23 13:46:03,276 - nlp_preprocess - INFO - Loaded data/raw/userb_history.csv with 300 records
+2025-07-23 13:46:03,811 - nlp_preprocess - INFO - Saved cleaned history to data/processed/cleaned_history.csv with 300 records
+2025-07-23 13:46:03,831 - nlp_vectorize - ERROR - Vectorization failed: _path_exists: path should be string, bytes, os.PathLike or integer, not DataFrame
+2025-07-23 13:47:38,058 - chrome_history - INFO - Please ensure Chrome or Brave is closed before running.
+2025-07-23 13:47:38,059 - chrome_history - INFO - Found brave history file at C:\Users\Admin\AppData\Local\BraveSoftware\Brave-Browser\User Data\Default\History
+2025-07-23 13:47:38,073 - chrome_history - INFO - Copied history file to temp_brave_history.db
+2025-07-23 13:47:38,089 - chrome_history - INFO - Saved 300 recent history records to data/raw/userb_history.csv
+2025-07-23 13:47:38,092 - chrome_history - INFO - Removed temporary file temp_brave_history.db
+2025-07-23 13:47:38,092 - chrome_history - INFO - Brave history extraction completed
+2025-07-23 13:47:38,112 - nlp_preprocess - INFO - Loaded data/raw/userb_history.csv with 300 records
+2025-07-23 13:47:38,642 - nlp_preprocess - INFO - Saved cleaned history to data/processed/cleaned_history.csv with 300 records
+2025-07-23 13:47:38,666 - nlp_vectorizer - INFO - Vectorized 300 documents with 53 features
+2025-07-23 13:50:13,193 - chrome_history - INFO - Please ensure Chrome or Brave is closed before running.
+2025-07-23 13:50:13,193 - chrome_history - INFO - Found brave history file at C:\Users\Admin\AppData\Local\BraveSoftware\Brave-Browser\User Data\Default\History
+2025-07-23 13:50:13,208 - chrome_history - INFO - Copied history file to temp_brave_history.db
+2025-07-23 13:50:13,225 - chrome_history - INFO - Saved 300 recent history records to data/raw/userb_history.csv
+2025-07-23 13:50:13,227 - chrome_history - INFO - Removed temporary file temp_brave_history.db
+2025-07-23 13:50:13,227 - chrome_history - INFO - Brave history extraction completed
+2025-07-23 13:50:13,247 - nlp_preprocess - INFO - Loaded data/raw/userb_history.csv with 300 records
+2025-07-23 13:50:13,788 - nlp_preprocess - INFO - Saved cleaned history to data/processed/cleaned_history.csv with 300 records
+2025-07-23 13:50:13,809 - nlp_vectorizer - INFO - Vectorized 300 documents with 53 features
+2025-07-23 13:53:55,407 - chrome_history - INFO - Please ensure Chrome or Brave is closed before running.
+2025-07-23 13:53:55,407 - chrome_history - INFO - Found brave history file at C:\Users\Admin\AppData\Local\BraveSoftware\Brave-Browser\User Data\Default\History
+2025-07-23 13:53:55,421 - chrome_history - INFO - Copied history file to temp_brave_history.db
+2025-07-23 13:53:55,438 - chrome_history - INFO - Saved 300 recent history records to data/raw/userb_history.csv
+2025-07-23 13:53:55,441 - chrome_history - INFO - Removed temporary file temp_brave_history.db
+2025-07-23 13:53:55,441 - chrome_history - INFO - Brave history extraction completed
+2025-07-23 13:53:55,463 - nlp_preprocess - INFO - Loaded data/raw/userb_history.csv with 300 records
+2025-07-23 13:53:55,998 - nlp_preprocess - INFO - Saved cleaned history to data/processed/cleaned_history.csv with 300 records
+2025-07-23 13:53:56,023 - nlp_vectorizer - INFO - Vectorized 300 documents with 53 features and saved to data/processed/tfidf_features.pkl
+2025-07-23 13:56:50,789 - chrome_history - INFO - Please ensure Chrome or Brave is closed before running.
+2025-07-23 13:56:50,790 - chrome_history - INFO - Found brave history file at C:\Users\Admin\AppData\Local\BraveSoftware\Brave-Browser\User Data\Default\History
+2025-07-23 13:56:50,805 - chrome_history - INFO - Copied history file to temp_brave_history.db
+2025-07-23 13:56:50,823 - chrome_history - INFO - Saved 300 recent history records to data/raw/userb_history.csv
+2025-07-23 13:56:50,825 - chrome_history - INFO - Removed temporary file temp_brave_history.db
+2025-07-23 13:56:50,825 - chrome_history - INFO - Brave history extraction completed
+2025-07-23 13:56:50,845 - nlp_preprocess - INFO - Loaded data/raw/userb_history.csv with 300 records
+2025-07-23 13:56:51,378 - nlp_preprocess - INFO - Saved cleaned history to data/processed/cleaned_history.csv with 300 records
+2025-07-23 13:56:51,402 - nlp_vectorizer - INFO - Vectorized 300 documents with 53 features and saved to data/processed/tfidf_features.pkl
+2025-07-23 13:56:51,409 - model_train - INFO - Loaded TF-IDF features from data/processed/tfidf_features.pkl with shape (300, 53)
+2025-07-23 13:56:51,415 - model_train - ERROR - Training failed: 'csr_matrix' object has no attribute 'values'
+2025-07-23 14:02:22,786 - chrome_history - INFO - Please ensure Chrome or Brave is closed before running.
+2025-07-23 14:02:22,786 - chrome_history - INFO - Found brave history file at C:\Users\Admin\AppData\Local\BraveSoftware\Brave-Browser\User Data\Default\History
+2025-07-23 14:02:22,800 - chrome_history - INFO - Copied history file to temp_brave_history.db
+2025-07-23 14:02:22,817 - chrome_history - INFO - Saved 300 recent history records to data/raw/userb_history.csv
+2025-07-23 14:02:22,819 - chrome_history - INFO - Removed temporary file temp_brave_history.db
+2025-07-23 14:02:22,820 - chrome_history - INFO - Brave history extraction completed
+2025-07-23 14:02:22,838 - nlp_preprocess - INFO - Loaded data/raw/userb_history.csv with 300 records
+2025-07-23 14:02:23,365 - nlp_preprocess - INFO - Saved cleaned history to data/processed/cleaned_history.csv with 300 records
+2025-07-23 14:02:23,386 - nlp_vectorizer - INFO - Vectorized 300 documents with 53 features and saved to data/processed/tfidf_features.pkl
+2025-07-23 14:02:23,394 - model_train - INFO - Loaded TF-IDF features from data/processed/tfidf_features.pkl with shape (300, 53)
+2025-07-23 14:02:23,400 - model_train - INFO - Split data into train (240 samples) and test (60 samples)
+2025-07-23 14:02:23,417 - model_train - INFO - Model training completed
+2025-07-23 14:02:23,418 - model_train - INFO - Model accuracy on test set: 1.00
+2025-07-23 14:02:23,418 - model_train - INFO - Saved model to models/logistic_regression.pkl

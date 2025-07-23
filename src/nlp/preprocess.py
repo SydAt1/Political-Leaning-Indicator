@@ -22,36 +22,34 @@ def clean_text(text):
     tokens = [token.lemma_ for token in doc if not token.is_stop and token.text.strip()]
     return ' '.join(tokens)
 
-def preprocess_history(input_paths, output_path='data/processed/cleaned_history.csv'):
-    """Preprocess browser history CSVs and save cleaned data."""
+def preprocess_history(input_path, output_path='data/processed/cleaned_history.csv'):
+    """Preprocess browser history CSV and save cleaned data.
+    
+    Args:
+        input_path (str): Path to the raw history CSV file.
+        output_path (str): Path to save the cleaned history CSV (default: 'data/processed/cleaned_history.csv').
+    
+    Returns:
+        pandas.DataFrame: Processed DataFrame with cleaned text.
+    """
     try:
-        dfs = []
-        for path in input_paths:
-            if os.path.exists(path):
-                df = pd.read_csv(path)
-                dfs.append(df)
-                logger.info(f"Loaded {path} with {len(df)} records")
-            else:
-                logger.warning(f"Input file {path} not found")
-        if not dfs:
-            raise FileNotFoundError("No input files found")
-        combined_df = pd.concat(dfs, ignore_index=True)
-        combined_df['cleaned_title'] = combined_df['title'].apply(clean_text)
-        combined_df['cleaned_url'] = combined_df['url'].apply(clean_text)
-        combined_df = combined_df[
-            (combined_df['cleaned_title'] != '') | (combined_df['cleaned_url'] != '')
-        ]
+        if not os.path.exists(input_path):
+            raise FileNotFoundError(f"Input file {input_path} not found")
+        df = pd.read_csv(input_path)
+        logger.info(f"Loaded {input_path} with {len(df)} records")
+
+        df['cleaned_title'] = df['title'].apply(clean_text)
+        df['cleaned_url'] = df['url'].apply(clean_text)
+        df = df[(df['cleaned_title'] != '') | (df['cleaned_url'] != '')]
+
         os.makedirs(os.path.dirname(output_path), exist_ok=True)
-        combined_df.to_csv(output_path, index=False)
-        logger.info(f"Saved cleaned history to {output_path} with {len(combined_df)} records")
-        return combined_df
+        df.to_csv(output_path, index=False)
+        logger.info(f"Saved cleaned history to {output_path} with {len(df)} records")
+        return df
     except Exception as e:
         logger.error(f"Preprocessing failed: {e}")
         raise
 
 if __name__ == "__main__":
-    input_paths = [
-        'data/raw/user1_history.csv',
-        'data/raw/user2_history.csv'
-    ]
-    preprocess_history(input_paths)
+    input_path = 'data/raw/user1_history.csv'  # Single path for testing
+    preprocess_history(input_path)

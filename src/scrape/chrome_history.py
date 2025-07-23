@@ -47,9 +47,9 @@ def copy_history_file(history_path, temp_path='temp_history.db'):
         logger.error("Permission denied accessing history file")
         raise
 
-def extract_chromium_history(temp_path, output_path='data/raw/user1_history.csv', 
-                           start_date=None, end_date=None, keywords=None):
-    """Extract history from Chrome/Brave SQLite database with filters and save to CSV."""
+def extract_chromium_history(temp_path, output_path='data/raw/userb_history.csv', 
+                           start_date=None, end_date=None, keywords=None, limit=300):
+    """Extract the 300 most recent history entries from Chrome/Brave SQLite database."""
     try:
         conn = sqlite3.connect(temp_path)
         cursor = conn.cursor()
@@ -73,7 +73,8 @@ def extract_chromium_history(temp_path, output_path='data/raw/user1_history.csv'
             query += f" AND ({keyword_conditions})"
             for keyword in keywords:
                 params.extend([f"%{keyword}%", f"%{keyword}%"])
-        query += " ORDER BY urls.last_visit_time DESC"
+        query += " ORDER BY urls.last_visit_time DESC LIMIT ?"
+        params.append(limit)  # Add limit parameter
         cursor.execute(query, params)
         history_data = cursor.fetchall()
         columns = ['url', 'title', 'last_visit_time']
@@ -87,9 +88,8 @@ def extract_chromium_history(temp_path, output_path='data/raw/user1_history.csv'
 
         os.makedirs(os.path.dirname(output_path), exist_ok=True)
         df.to_csv(output_path, index=False)
-        logger.info(f"Saved history to {output_path} with {len(df)} records")
-
-        return df
+        logger.info(f"Saved {len(df)} recent history records to {output_path}")
+        return output_path
     except sqlite3.Error as e:
         logger.error(f"SQLite error: {e}")
         raise
@@ -106,8 +106,10 @@ def main(start_date=None, end_date=None, keywords=None):
         history_path, browser = get_chromium_history_path()
         temp_path = f'temp_{browser}_history.db'
         temp_db = copy_history_file(history_path, temp_path)
-        extract_chromium_history(temp_path, 'data/raw/user1_history.csv', start_date, end_date, keywords)
+        output_path = f'data/raw/user{browser[0]}_history.csv'
+        extract_chromium_history(temp_path, output_path, start_date, end_date, keywords)
         logger.info(f"{browser.capitalize()} history extraction completed")
+        return output_path
     except Exception as e:
         logger.error(f"Failed to extract history: {e}")
         raise
@@ -116,9 +118,9 @@ if __name__ == "__main__":
     print("This script requires explicit user consent to access browser history.")
     consent = input("Do you consent to extracting your Chrome/Brave history? (yes/no): ").lower()
     if consent == 'yes':
-        start_date = datetime(2025, 1, 1)  # Example: from Jan 1, 2025
-        end_date = datetime(2025, 7, 19)   # Example: up to July 19, 2025
-        keywords = ['politics', 'news']     # Example: filter for politics/news
+        start_date = datetime(2025, 1, 1)
+        end_date = datetime(2025, 7, 19)
+        keywords = ['politics', 'news']
         main(start_date, end_date, keywords)
     else:
         logger.warning("User did not provide consent. Exiting.")

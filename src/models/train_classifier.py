@@ -7,6 +7,8 @@ import os
 from utils.logger import setup_logger
 import pickle
 import sys
+from scipy.sparse import csr_matrix
+
 sys.path.append(os.path.abspath(os.path.join(os.path.dirname(__file__), '../..')))
 
 # Set up logging
@@ -16,24 +18,26 @@ def train_classifier(tfidf_path='data/processed/tfidf_features.pkl', labels_path
                     model_path='models/logistic_regression.pkl'):
     """Train a Logistic Regression classifier and save the model."""
     try:
-        # Load TF-IDF features
-        tfidf_df = pd.read_pickle(tfidf_path)
-        logger.info(f"Loaded TF-IDF features from {tfidf_path} with shape {tfidf_df.shape}")
+        # Load TF-IDF features as a sparse matrix
+        with open(tfidf_path, 'rb') as f:
+            X = pickle.load(f)
+        if not isinstance(X, csr_matrix):
+            raise ValueError(f"Expected a sparse matrix, got {type(X)}")
+        logger.info(f"Loaded TF-IDF features from {tfidf_path} with shape {X.shape}")
 
         # Load labels
         labels_df = pd.read_csv(labels_path)
         if 'label' not in labels_df.columns:
             raise ValueError("Labels file must contain a 'label' column")
-        y = labels_df['label']
-        if len(y) != tfidf_df.shape[0]:
+        y = labels_df['label'].values
+        if len(y) != X.shape[0]:
             raise ValueError("Mismatch between number of samples in TF-IDF and labels")
-        X = tfidf_df.values
 
         # Split data into train and test sets
         X_train, X_test, y_train, y_test = train_test_split(X, y, test_size=0.2, random_state=42)
-        logger.info(f"Split data into train ({len(X_train)} samples) and test ({len(X_test)} samples)")
+        logger.info(f"Split data into train ({X_train.shape[0]} samples) and test ({X_test.shape[0]} samples)")
 
-        # Train Logistic Regression
+        # Train Logistic Regression (supports sparse input)
         model = LogisticRegression(max_iter=1000)
         model.fit(X_train, y_train)
         logger.info("Model training completed")
